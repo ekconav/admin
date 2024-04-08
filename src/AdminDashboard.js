@@ -64,9 +64,9 @@ const AdminDashboard = () => {
           {users.map((user, index) => (
             <li key={index} className="list-item">
               <span className="user-details">
-                <span className="user-name">{user.firstName} {user.lastName}</span>
-                <span className="user-email">{user.email}</span>
-                <span className="user-mobile">{user.mobileNumber}</span>
+                <span className="user-name">Name: {user.firstName} {user.lastName}</span>
+                <span className="user-email">Email: {user.email}</span>
+                <span className="user-mobile">Mobile Number: +63{user.mobileNumber}</span>
               </span>
               <button className="delete-button" onClick={() => handleDeleteUser(user.id)}>
                 <MdDelete /> Delete
@@ -82,9 +82,9 @@ const AdminDashboard = () => {
           {shelters.map((shelter, index) => (
             <li key={index} className="list-item">
               <span className="shelter-details">
-                <span className="shelter-name">{shelter.shelterName}</span>
-                <span className="shelter-email">{shelter.email}</span>
-                <span className="shelter-mobile">{shelter.mobileNumber}</span>
+                <span className="shelter-name">Shelter Name: {shelter.shelterName}</span>
+                <span className="shelter-email">Shelter Email: {shelter.email}</span>
+                <span className="shelter-mobile">Shelter Mobile Number: {shelter.mobileNumber}</span>
               </span>
               <button className="delete-button" onClick={() => handleDeleteShelter(shelter.id)}>
                 <MdDelete /> Delete
